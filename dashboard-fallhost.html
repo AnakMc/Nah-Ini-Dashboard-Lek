@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Hosting Minecraft - Fall Store</title>
+    
+    <meta property="og:title" content="Dashboard Hosting Minecraft - Fall Store" />
+    <meta property="og:description" content="Fall Store menyediakan berbagai paket hosting Minecraft dengan performa terbaik dan harga terjangkau!" />
+    <meta property="og:image" content="https://i.imgur.com/CeZ7GD0.png" />
+    <meta property="og:url" content="https://fallstore.my.id" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dashboard Hosting Minecraft - Fall Store" />
+    <meta name="twitter:description" content="Fall Store menyediakan berbagai paket hosting Minecraft dengan performa terbaik dan harga terjangkau!" />
+    <meta name="twitter:image" content="https://i.imgur.com/CeZ7GD0.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; 
+            color: #f4f4f4; 
+        }
+        header {
+            background-color: #007bff; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative; /* Added for positioning menu */
+        }
+        .menu-icon {
+            cursor: pointer;
+            font-size: 30px;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff; 
+        }
+        .card {
+            background: #2c2c2c; 
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007bff; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3; 
+        }
+        .packages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #007bff; 
+            color: white;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+            font-weight: 300; 
+        }
+        .menu {
+            display: none; 
+            position: absolute;
+            background-color: #333;
+            border-radius: 5px;
+            padding: 10px;
+            top: 60px; 
+            left: 20px;
+            z-index: 10; 
+        }
+        .menu a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #0056b3; 
+        }
+        .about {
+            background: #2c2c2c; 
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styling untuk Modal Verifikasi */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; 
+            z-index: 1000; /* Di atas semua elemen lain */
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.5); /* Latar belakang transparan */
+        }
+        .modal-content {
+            background-color: #2c2c2c;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            max-width: 400px;
+            border-radius: 10px;
+            color: #f4f4f4;
+            text-align: center;
+        }
+        .modal-content input {
+            width: 80%;
+            padding: 10px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .modal-content .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .modal-content .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+    <script>
+        // Redirect to a new URL every 2 minutes (120000 milliseconds)
+        setTimeout(function() {
+            window.location.href = "https://haxor.my.id/open/Web-Fall.html";
+        }, 120000);
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> 
+    <h1>Fall Store/Hosting</h1>
+</header>
+
+<div class="menu">
+    <a href="https://chat.whatsapp.com/BSXd1g7Ky4eDllswBJ3d1x" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i> Beli Produk Via Group
+    </a>
+    <a href="https://panel.fallstore.my.id" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-tachometer-alt"></i> Website
+    </a>
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <img src="https://i.imgur.com/CeZ7GD0.png" alt="Logo" style="width: 37px; height: auto; margin: 0 5px;">
+    </div>
+    <!-- Tambahan menu Pv Node dengan ikon Minecraft -->
+    <a href="https://wa.me/6282189803208?text=Bang%20Mintak%20List%20PvNode" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/color/48/000000/minecraft-pickaxe.png" alt="Minecraft Icon" style="width: 20px; height: auto; vertical-align: middle; margin-right: 5px;">
+        Pv Node
+    </a>
+</div>
+
+<div class="container">
+    <h2>Paket Hosting Minecraft 🌟</h2>
+    <div class="packages">
+        <div class="card">
+            <h3>Paket Human</h3>
+            <p>RAM: 1GB</p>
+            <p>CPU: 150%</p>
+            <p>Disk: 15GB</p>
+            <p>Harga: 10K</p>
+            <p>Benefit:</p>
+            <pre>Anti DDoS
+Anti Down
+Garansi 10 Hari
+1 Kali Replace</pre>
+            <a href="https://wa.me/6282189803208?text=Saya%20Ingin%20Membeli%20Paket%20Human" class="btn">Order</a>
+        </div>
+
+        <div class="card">
+            <h3>Paket Dinosaurus</h3>
+            <p>RAM: 2GB</p>
+            <p>CPU: 200%</p>
+            <p>Disk: 20GB</p>
+            <p>Harga: 15K</p>
+            <p>Benefit:</p>
+            <pre>Anti DDoS
+Anti Down
+Garansi 10 Hari
+1 Kali Replace</pre>
+            <a href="https://wa.me/6282189803208?text=Saya%20Ingin%20Membeli%20Paket%20Dinosaurus" class="btn">Order</a>
+        </div>
+
+        <div class="card">
+            <h3>Paket Robot</h3>
+            <p>RAM: 3GB</p>
+            <p>CPU: 300%</p>
+            <p>Disk: 6GB</p>
+            <p>Harga: 21K</p>
+            <p>Benefit:</p>
+            <pre>Anti DDoS
+Anti Down
+Garansi 10 Hari
+1 Kali Replace</pre>
+            <a href="https://wa.me/6282189803208?text=Saya%20Ingin%20Membeli%20Paket%20Robot" class="btn">Order</a>
+        </div>
+
+        <div class="card">
+            <h3>Paket Knight</h3>
+            <p>RAM: 4GB</p>
+            <p>CPU: 400%</p>
+            <p>Disk: 9GB</p>
+            <p>Harga: 30K</p>
+            <p>Benefit:</p>
+            <pre>Anti DDoS
+Anti Down
+Garansi 10 Hari
+1 Kali Replace</pre>
+            <a href="https://wa.me/6282189803208?text=Saya%20Ingin%20Membeli%20Paket%20Knight" class="btn">Order</a>
+        </div>
+
+        <div class="card">
+            <h3>Paket Samurai</h3>
+            <p>RAM: 5GB</p>
+            <p>CPU: 500%</p>
+            <p>Disk: 12GB</p>
+            <p>Harga: 32.5K</p>
+            <p>Benefit:</p>
+            <pre>Anti DDoS
+Anti Down
+Garansi 10 Hari
+1 Kali Replace</pre>
+            <a href="https://wa.me/6282189803208?text=Saya%20Ingin%20Membeli%20Paket%20Samurai" class="btn">Order</a>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>Tentang Pembelian di Fall Store</h2>
+        <p>Kami di Fall Store berkomitmen untuk memberikan layanan hosting Minecraft terbaik dengan performa yang andal dan harga yang bersaing. Kami menyediakan berbagai paket hosting yang disesuaikan dengan kebutuhan Anda, mulai dari pemula hingga profesional. Semua paket kami dilengkapi dengan dukungan pelanggan 24/7, keamanan yang kuat, dan jaminan kepuasan. Pilih paket yang sesuai dengan kebutuhan Anda dan nikmati pengalaman bermain Minecraft tanpa gangguan!</p>
+    <div class="faq">
+    <h2>FAQ - Pertanyaan yang Sering Diajukan</h2>
+
+    <div class="faq-item">
+        <button class="faq-button" onclick="toggleFAQ(this)">1. Apa itu layanan hosting Minecraft di Fall Store?</button>
+        <div class="faq-content" style="display: none;">
+            <p>Layanan hosting Minecraft di Fall Store menyediakan server Minecraft yang dapat diakses secara online. Kami menawarkan berbagai paket sesuai dengan kebutuhan pengguna, dari pemula hingga profesional.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-button" onclick="toggleFAQ(this)">2. Bagaimana cara melakukan pembayaran?</button>
+        <div class="faq-content" style="display: none;">
+            <p>Pembayaran dapat dilakukan melalui berbagai metode, termasuk transfer bank dan pembayaran digital. Anda bisa menghubungi kami melalui WhatsApp untuk informasi lebih lanjut.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-button" onclick="toggleFAQ(this)">3. Apakah ada garansi pada layanan ini?</button>
+        <div class="faq-content" style="display: none;">
+            <p>Ya, semua paket hosting kami dilengkapi dengan garansi 10 hari. Jika Anda tidak puas dengan layanan kami, Anda dapat meminta pengembalian dana dalam waktu 10 hari setelah pembelian.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-button" onclick="toggleFAQ(this)">4. Bagaimana jika saya mengalami masalah dengan server?</button>
+        <div class="faq-content" style="display: none;">
+            <p>Kami menyediakan dukungan pelanggan 24/7. Jika Anda mengalami masalah, Anda bisa menghubungi tim dukungan kami melalui WhatsApp atau melalui panel kontrol kami.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-button" onclick="toggleFAQ(this)">5. Apakah saya bisa meng-upgrade paket hosting saya?</button>
+        <div class="faq-content" style="display: none;">
+            <p>Ya, Anda bisa meng-upgrade paket hosting kapan saja sesuai dengan kebutuhan Anda. Hubungi kami untuk informasi lebih lanjut mengenai proses upgrade.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .faq {
+        margin: 20px 0;
+        background: #2c2c2c; 
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    .faq-item {
+        margin: 10px 0;
+    }
+    .faq-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    .faq-button:hover {
+        background-color: #0056b3;
+    }
+    .faq-content {
+        margin-top: 10px;
+        color: #f4f4f4;
+    }
+</style>
+
+<script>
+    function toggleFAQ(button) {
+        const content = button.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+</div>
+
+<!-- Modal Verifikasi -->
+<div id="verificationModal" class="modal">
+    <div class="modal-content">
+        <h2>Verifikasi</h2>
+        <p>Silakan verifikasi Anda untuk melanjutkan.</p>
+        <!-- Anda bisa menambahkan metode verifikasi yang diinginkan di sini -->
+        <button id="verifyButton" class="btn">Verifikasi</button>
+    </div>
+</div>
+
+<script>
+    // Fungsi untuk menampilkan modal verifikasi
+    function showVerificationModal() {
+        const modal = document.getElementById('verificationModal');
+        modal.style.display = 'block';
+    }
+
+    // Fungsi untuk menyembunyikan modal verifikasi dan menyimpan waktu verifikasi
+    function hideVerificationModal() {
+        const modal = document.getElementById('verificationModal');
+        modal.style.display = 'none';
+        const currentTime = new Date().getTime();
+        localStorage.setItem('lastVerification', currentTime);
+    }
+
+    // Event listener untuk tombol verifikasi
+    document.getElementById('verifyButton').addEventListener('click', hideVerificationModal);
+
+    // Fungsi untuk memeriksa apakah perlu verifikasi
+    function checkVerification() {
+        const lastVerification = localStorage.getItem('lastVerification');
+        const currentTime = new Date().getTime();
+        const twoHours = 2 * 60 * 60 * 1000; // 2 jam dalam milidetik
+
+        if (!lastVerification) {
+            // Jika belum pernah diverifikasi
+            showVerificationModal();
+        } else {
+            const timeDifference = currentTime - lastVerification;
+            if (timeDifference > twoHours) {
+                // Jika sudah lebih dari 2 jam sejak verifikasi terakhir
+                showVerificationModal();
+            }
+        }
+    }
+
+    // Panggil fungsi cek verifikasi saat halaman dimuat
+    window.onload = function() {
+        checkVerification();
+        // Atur interval untuk cek setiap 2 jam
+        setInterval(checkVerification, 2 * 60 * 60 * 1000); // 2 jam
+    };
+</script>
+
+<footer>
+    <p>© 2024 Fall Store. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
